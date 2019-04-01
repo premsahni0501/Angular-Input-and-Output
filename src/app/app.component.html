@@ -1,0 +1,5 @@
+<hello name="{{ name }}" (click)="name = 'Component'"></hello>
+<button (click)="name = 'Component'">Click here to reset data</button>
+<br>
+<br>
+<child-comp [childInput]="name" (childOutput)="dataReceived($event)"></child-comp>
